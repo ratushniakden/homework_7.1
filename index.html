@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JS DOM</h1>
+    <div class="userInput">
+      <input id="mainInput" type="text" />
+      <button id="btn">Press me</button>
+    </div>
+    <div class="container">
+      <img
+        src="./assets/image/smoked_forest.jpg"
+        onmouseover="this.src='./assets/image/forest.jpg'"
+        onmouseout="this.src='./assets/image/smoked_forest.jpg'"
+      />
+    </div>
+    <div class="slider sliderPosition">
+      <div class="slides">
+        <input type="radio" name="r" id="r1" checked />
+        <input type="radio" name="r" id="r2" />
+        <input type="radio" name="r" id="r3" />
+
+        <div class="slide s1">
+          <img src="./assets/image/mountain_1.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./assets/image/mountain_2.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="./assets/image/mountain_3.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="navigation">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+        <label for="r3" class="bar"></label>
+      </div>
+    </div>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
