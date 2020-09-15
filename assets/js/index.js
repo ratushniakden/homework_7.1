@@ -1,17 +1,17 @@
 "use strict";
 
 const buttonElement = document.getElementById("btn");
-const forestImageHandler = document.getElementById("forestImage");
+const forestImage = document.getElementById("forestImage");
 
 buttonElement.addEventListener("click", buttonClickHandler);
 buttonElement.addEventListener("click", changeButtonNameOnClick);
 
-forestImageHandler.addEventListener("mouseover", () => {
-  forestImageHandler.setAttribute("src", "./assets/image/forest.jpg");
+forestImage.addEventListener("mouseover", (event) => {
+  event.currentTarget.setAttribute("src", "./assets/image/forest.jpg");
 });
 
-forestImageHandler.addEventListener("mouseout", () => {
-  forestImageHandler.setAttribute("src", "./assets/image/smoked_forest.jpg");
+forestImage.addEventListener("mouseout", (event) => {
+  event.currentTarget.setAttribute("src", "./assets/image/smoked_forest.jpg");
 });
 
 function buttonClickHandler() {
